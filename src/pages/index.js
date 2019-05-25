@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -7,14 +6,34 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <SEO title={"THime"} titleTemplate="%s" />
+    <div
+      style={{
+        display: `flex`,
+        alignItems: `center`,
+        justifyContent: `center`,
+      }}
+    >
+      <div style={{ maxWidth: `300px`, flex: `1` }}>
+        <Image src="thime-icon.png" />
+      </div>
+      <div style={{ fontFamily: `Roboto`, fontSize: `80px`, fontWeight: 300 }}>
+        THime
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div
+      style={{
+        display: `flex`,
+        alignItems: `center`,
+        justifyContent: `center`,
+      }}
+    >
+      <div style={{ maxWidth: `250px`, flex: `1` }}>
+        <a href="https://play.google.com/store/apps/details?id=com.alexbordin.thime">
+          <Image alt="Get it on Google Play" src="google-play-badge.png" />
+        </a>
+      </div>
+    </div>
   </Layout>
 )
 

@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 
 export const metadata = {
+  metadataBase: new URL('https://thime.bordin.cloud'),
   title: "THime",
   description: "THime app"
 }
